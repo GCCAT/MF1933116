@@ -9,40 +9,38 @@
 
 class Dictionary_forEach_body{
 
-	 /**
+    /**
      * input: 0
      * output: 1
-	 * ret0 ret0 = 79
+     * ret0 ret0 = 79
      */
     static func forEach0(){
-
-		print(">>>>>>>>>>>>")
+	print(">>>>>>>>>>>>")
         var dict0:[String:Int] = ["Mohan":75, "Raghu":82, "John":79] 
-		dict0.forEach { (k,v) in
-			if k == "John" {
-			let ret0 = v
-			assert (ret0 == 79)
-			print("key : \(k) value :\(v)")
-			}
+	dict0.forEach { (k,v) in
+		if k == "John" {
+		let ret0 = v
+		assert (ret0 == 79)
+		print("key : \(k) value :\(v)")
 		}
+	}
     }
 
-	 /**
+    /**
      * input: 0
      * output: 1
-	 * ret0 ret0 = Raghu"
+     * ret0 ret0 = "Raghu"
      */
     static func forEach1(){
-	
-		print(">>>>>>>>>>>>")
+	print(">>>>>>>>>>>>")
         var dict0:[String:Int] = ["Mohan":75, "Raghu":82, "John":79] 
-		dict0.forEach { (k,v) in
-			if v == 82 {
-			let ret0 = k
-			assert (ret0 == "Raghu")
-			print("key : \(k) value :\(v)")
-			}
+	dict0.forEach { (k,v) in
+		if v == 82 {
+		let ret0 = k
+		assert (ret0 == "Raghu")
+		print("key : \(k) value :\(v)")
 		}
+	}
     }
 }
 
